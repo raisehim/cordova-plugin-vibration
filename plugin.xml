@@ -19,9 +19,7 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-vibration"
-    version="3.1.2-dev">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-vibration" version="3.1.2-dev">
 
     <name>Vibration</name>
     <description>Cordova Vibration Plugin</description>
@@ -45,12 +43,12 @@
             </feature>
         </config-file>
         <header-file src="src/ios/CDVVibration.h" />
-	    <source-file src="src/ios/CDVVibration.m" />
+        <source-file src="src/ios/CDVVibration.m" />
         <js-module src="www/vibration.js" name="notification">
             <merges target="navigator" />
         </js-module>
 
-		<framework src="AudioToolbox.framework" weak="true" />
+        <framework src="AudioToolbox.framework" weak="true" />
     </platform>
 
     <!-- windows -->
@@ -62,8 +60,7 @@
             <merges target="navigator" />
         </js-module>
 
-        <framework src="src/windows/Vibration/Vibration.csproj" target="phone"
-            type="projectReference" custom="true" versions="&lt;10.0.0" />
+        <framework src="src/windows/Vibration/Vibration.csproj" target="phone" type="projectReference" custom="true" versions="&lt;10.0.0" />
     </platform>
 
     <!-- browser -->
